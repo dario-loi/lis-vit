@@ -1,0 +1,119 @@
+\documentclass[english, xcolor={table}]{beamer}
+\usepackage{graphicx}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenx}
+\usepackage[T1]{fontenc}      % Font encoding
+\usepackage{palatino}          % lmodern font, correctly copyable characters in pdf
+\usepackage{hyperref}         % Hyperlinks
+\usepackage{amsmath}          % Math
+\usepackage{amssymb}          % Math symbols
+\usepackage{mathtools}        % Math tools
+\usepackage{microtype}        % Microtypography
+\usepackage{csquotes}
+\usepackage{bookmark}
+\usepackage{subfigure}
+\usepackage{tikz}
+\usepackage{chngcntr}
+\usepackage{ragged2e}
+\counterwithin{subfigure}{figure}
+\usepackage{caption}
+\usepackage{listings}
+\usepackage{tabularx}
+\usepackage{booktabs}         % Tables
+\usepackage{float}
+\usepackage{listings}
+\usepackage{bera}
+\usepackage{cleveref}
+
+%%%% COMPILE WITH LATEXMK %%%%
+
+\usetheme[
+  bullet=circle,                  % Use circles instead of squares for bullets
+  titleline=false,                % Show a line below the frame
+  alternativetitlepage=true,      % Use the fancy title
+  titlepagelogo=logo-sapienza,    % Logo for the first slide
+  watermark=watermark-diag,       % Watermark used in every slide
+  watermarkheight=20px,           % Desired height of the watermark
+  watermarkheightmult=6,          % Watermark image is actually x times bigger
+  displayauthoronfooter=true,     % Display author name in the footer
+]{Roma}
+\watermarkoff%
+\author{\textbf{Dario Loi} --- \textbf{1940849}}
+
+\title{Advanced Machine Learning}
+\subtitle{Final Project Presentation --- MobileViTs for Sign Language Recognition}
+\institute{M.Sc. in Computer Science, \\ Sapienza, University of Rome.}
+\date{A. Y. 2024 -- 2025}
+
+% Cover future items, do not cover past items
+
+\setbeamercovered{transparent=20}
+
+\colorlet{punct}{red!60!black}
+\definecolor{background}{HTML}{EEEEEE}
+\definecolor{delim}{RGB}{20,105,176}
+\colorlet{numb}{magenta!60!black}
+
+% BiBTeX
+
+\begin{document}
+
+\maketitle
+
+\section{Task and Motivation}
+
+\begin{frame}
+  % two columns
+  \frametitle{Task and Motivation}
+
+  \begin{columns}
+    \begin{column}{0.4\textwidth}
+      \begin{itemize}
+        \item \textbf{Task:} Continuous Sign Language Recognition (CSLR).
+        \item \textbf{Dataset:} RWTH-PHOENIX-Weather 2014.
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.6\textwidth}
+        We believe CSLR to be an impactful task if solved efficiently enough to be used in real-time applications.
+
+
+        Currently, it has been approached with either CNNs\cite{hu_continuous_2023, ahn_slowfast_2023} that don't capture strong temporal dependencies,
+        or expensive LLMs\cite{gong_llms_2024}. 
+      \end{column}
+  \end{columns}
+\end{frame}
+
+\section{Models, Tools, Novelty}
+\begin{frame}
+  % two columns
+  \frametitle{Models, Tools, Novelty}
+
+  We want to apply MobileViTs\cite{mehta_mobilevit_2022} to the task to exploit exploit temporal dependencies in video sequences while mantaining a lightweight model.
+
+  \vspace{1em}
+
+  Current MobileViT implementations do not make full use of optimized PyTorch attention implementations. We believe that we can provide a model that reduces FLOPs while achieving SOTA performance on CSLR.
+      \footnote{
+        \url{https://github.com/jaiwei98/mobile-vit-pytorch} manually implements attention instead of using flash attention. }
+
+\end{frame}
+
+\section{Metrics \& Benchmarks}
+\begin{frame}
+  % two columns
+  \frametitle{Metrics \& Benchmarks}
+
+  We will compare our model to current state-of-the-art models on the RWTH-PHOENIX-Weather 2014 dataset in terms of the Word Error Rate (WER) metric 
+  
+  \[WER = \frac{\text{Substitutions}+\text{Deletions}+\text{Insertions}}{N}\]
+
+  We will also compare the number of FLOPs used by CNN state of the art models\cite{hu_continuous_2023, ahn_slowfast_2023} and an open-source MobileViT implementation to our model.
+\end{frame}
+
+\section{Bibliography}
+
+\bibliographystyle{abbrv}
+\bibliography{ref}
+
+
+\end{document}

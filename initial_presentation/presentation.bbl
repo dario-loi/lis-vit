@@ -1,0 +1,23 @@
+\begin{thebibliography}{1}
+
+\bibitem{ahn_slowfast_2023}
+J.~Ahn, Y.~Jang, and J.~S. Chung.
+\newblock {SlowFast} {Network} for {Continuous} {Sign} {Language} {Recognition}, Sept. 2023.
+\newblock arXiv:2309.12304 [cs].
+
+\bibitem{gong_llms_2024}
+J.~Gong, L.~G. Foo, Y.~He, H.~Rahmani, and J.~Liu.
+\newblock {LLMs} are {Good} {Sign} {Language} {Translators}, Apr. 2024.
+\newblock arXiv:2404.00925 [cs].
+
+\bibitem{hu_continuous_2023}
+L.~Hu, L.~Gao, Z.~Liu, and W.~Feng.
+\newblock Continuous {Sign} {Language} {Recognition} with {Correlation} {Network}, Mar. 2023.
+\newblock arXiv:2303.03202.
+
+\bibitem{mehta_mobilevit_2022}
+S.~Mehta and M.~Rastegari.
+\newblock {MobileViT}: {Light}-weight, {General}-purpose, and {Mobile}-friendly {Vision} {Transformer}, Mar. 2022.
+\newblock arXiv:2110.02178 [cs].
+
+\end{thebibliography}
