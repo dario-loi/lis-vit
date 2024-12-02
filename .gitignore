@@ -1,2 +1,5 @@
 .venv
 show_data/data
+project/data
+lightning_logs
+wandb
