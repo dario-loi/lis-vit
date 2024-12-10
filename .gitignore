@@ -3,3 +3,5 @@ show_data/data
 project/data
 lightning_logs
 wandb
+models
+trackedRightHand-92x132px
