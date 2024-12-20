@@ -1,0 +1,17 @@
+\frametitle{Results (News)}
+
+  \begin{figure}[h]
+    \centering
+    \caption{Results on the news test set}
+    \begin{tabular}{|c|c|c|c|c|}
+      \hline
+      Model               & Accuracy & Precision & Recall & F1    \\
+      \hline
+      \hline
+      Logistic regression & 0.666    & 0.776     & 0.824  & 0.800 \\
+      LSTM                & 0.714    & 0.869     & 0.800  & 0.833 \\
+      Baseline            & 0.638    & 1.000     & 0.638  & 0.779 \\
+      \hline
+    \end{tabular}
+  \end{figure}
+

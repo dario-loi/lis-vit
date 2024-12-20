@@ -62,6 +62,7 @@
 
 \section{Task and Motivation}
 
+
 \begin{frame}
   % two columns
   \frametitle{Task and Motivation}
@@ -81,33 +82,6 @@
         or expensive LLMs\cite{gong_llms_2024}. 
       \end{column}
   \end{columns}
-\end{frame}
-
-\section{Models, Tools, Novelty}
-\begin{frame}
-  % two columns
-  \frametitle{Models, Tools, Novelty}
-
-  We want to apply MobileViTs\cite{mehta_mobilevit_2022} to the task to exploit temporal dependencies in video sequences while mantaining a lightweight model.
-
-  \vspace{1em}
-
-  Current MobileViT implementations do not make full use of optimized PyTorch attention implementations. We believe that we can provide a model that reduces FLOPs while achieving SOTA performance on CSLR.
-      \footnote{
-        \url{https://github.com/jaiwei98/mobile-vit-pytorch} manually implements attention instead of using flash attention. }
-
-\end{frame}
-
-\section{Metrics \& Benchmarks}
-\begin{frame}
-  % two columns
-  \frametitle{Metrics \& Benchmarks}
-
-  We will compare our model to current state-of-the-art models on the RWTH-PHOENIX-Weather 2014 dataset in terms of the Word Error Rate (WER) metric 
-  
-  \[WER = \frac{\text{Substitutions}+\text{Deletions}+\text{Insertions}}{N}\]
-
-  We will also compare the number of FLOPs used by open-source MobileViT implementations to our model.
 \end{frame}
 
 \section{Bibliography}
