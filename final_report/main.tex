@@ -1,0 +1,81 @@
+\documentclass{IEEEtran}
+
+\usepackage{amssymb,amsmath,amsthm}
+\usepackage{mathtools}
+\usepackage[usenames,dvipsnames,table]{xcolor}
+\usepackage{cancel}
+\usepackage{mdframed}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage[T1]{fontenc}
+\usepackage{listings}
+\usepackage{hyperref}
+\hypersetup{pdftitle={Assignment I},pdfauthor={Dario Loi},colorlinks,
+urlcolor=black,linkcolor=black,citecolor=black,filecolor=black,
+pdfpagelayout=TwoPageRight, pdfnewwindow=true, pdfstartview=XYZ}
+\usepackage{cleveref}
+\usepackage{thmtools}
+\usepackage{tcolorbox}
+
+ 
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+ 
+\lstdefinestyle{python}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\small,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+ 
+\lstset{style=python}
+\newcommand{\pyinline}[1]{\lstinline[language=Python, basicstyle=\ttfamily\small, keywordstyle=\color{blue}, stringstyle=\color{red}]|#1|}
+
+
+
+\author{Dario Loi --- 1940849 \\ \and Alessandro Monteleone --- 1883922}
+\title{Advanced ML --- Final Project Report}
+\date{\today}
+
+\newcommand{\highlight}[1]{\colorbox{gray!20}{$\displaystyle #1$}}
+
+\begin{document}
+\lstset{language=Python}
+
+\maketitle
+
+\tableofcontents
+
+\section{Introduction}
+
+
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec tortor ultricies, cursus ante eu, egestas odio. Curabitur elementum turpis a blandit consequat. Sed suscipit lectus sollicitudin nibh mollis viverra. Cras interdum neque erat, id posuere purus mollis a. Vivamus leo elit, aliquam ac libero a, pharetra fermentum est. Vestibulum imperdiet risus id mi viverra, in ultricies lacus mattis. Phasellus porta neque nisl, vel sollicitudin tellus ultrices ac. Morbi aliquet lobortis sapien ac pretium. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce malesuada tempor rhoncus. Nam ultrices tempor accumsan.
+
+Integer porta, libero ac sagittis sagittis, ex dui facilisis nibh, ut malesuada metus arcu a orci. Mauris vel tortor in neque tristique congue. Nam mauris dui, placerat a vestibulum vel, pellentesque ut massa. Mauris sollicitudin eros vel sem faucibus, ut interdum erat placerat. Morbi vel quam ut tortor pretium ultricies eget at erat. Proin fringilla venenatis lacinia. Praesent tincidunt condimentum volutpat. Praesent sagittis erat nulla, id rutrum ex fringilla quis. Maecenas ut congue eros, vel efficitur velit. Integer non nulla ut elit pulvinar ullamcorper sed quis ligula. Integer porttitor pretium quam, a efficitur dui facilisis sit amet. Vivamus nec mi lacus. Duis mollis non dui aliquet eleifend.
+
+Donec commodo placerat felis, in luctus leo hendrerit sed. Ut scelerisque ex sed est bibendum, ut fringilla tellus sodales. Quisque ac massa ultrices, vulputate ex sit amet, dapibus libero. Etiam fermentum libero in molestie mollis. Nulla ac dolor sed metus dignissim imperdiet sed vel tortor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam sit amet nisl eleifend nunc dapibus maximus vel nec nisl. Aliquam sed ullamcorper neque. Vivamus tempus arcu eu risus mattis ultricies. Aliquam tortor quam, laoreet lobortis congue feugiat, euismod vitae ante. Quisque ornare tincidunt posuere. Phasellus quis molestie lorem. Suspendisse nec ex leo. Nullam tincidunt ex et dapibus facilisis.
+
+Curabitur id fermentum est. Praesent hendrerit mauris ligula, non suscipit ligula semper vitae. Sed justo diam, porta id ipsum ut, placerat ullamcorper augue. Integer mattis non neque at accumsan. Fusce a velit diam. Ut ullamcorper lacinia ipsum, id varius lacus efficitur at. Donec eu posuere eros, ut feugiat dolor. Sed porta ut tellus eget ultricies. Donec nec lorem auctor, porttitor ex in, fringilla orci. Vestibulum convallis, mauris ut vulputate euismod, mauris felis tincidunt mi, ut dictum diam dolor nec sem.
+
+Duis eget gravida lacus, ut eleifend enim. Praesent tincidunt feugiat bibendum. Praesent vel sapien et nisi lacinia semper. Vestibulum efficitur interdum libero, laoreet euismod urna. Pellentesque egestas orci arcu, a blandit arcu elementum nec. Etiam varius congue sem sed volutpat. Fusce non nulla a nibh mattis blandit sit amet gravida orci. Integer semper sodales leo, at elementum nisi malesuada fringilla. 
+
+\bibliographystyle{IEEEtran}
+\bibliography{ref}
+
+\end{document}

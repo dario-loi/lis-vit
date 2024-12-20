@@ -1,0 +1,18 @@
+\begin{thebibliography}{1}
+
+\bibitem{ahn_slowfast_2023}
+J.~Ahn, Y.~Jang, and J.~S. Chung.
+\newblock {SlowFast} {Network} for {Continuous} {Sign} {Language} {Recognition}, Sept. 2023.
+\newblock arXiv:2309.12304 [cs].
+
+\bibitem{mehta_mobilevit_2022}
+S.~Mehta and M.~Rastegari.
+\newblock {MobileViT}: {Light}-weight, {General}-purpose, and {Mobile}-friendly {Vision} {Transformer}, Mar. 2022.
+\newblock arXiv:2110.02178 [cs].
+
+\bibitem{zuo_local_2022}
+R.~Zuo and B.~Mak.
+\newblock Local {Context}-aware {Self}-attention for {Continuous} {Sign} {Language} {Recognition}.
+\newblock In {\em Interspeech 2022}, pages 4810--4814. ISCA, Sept. 2022.
+
+\end{thebibliography}
